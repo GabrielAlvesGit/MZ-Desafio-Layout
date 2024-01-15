@@ -28,25 +28,6 @@ body {
 
     /* Color*/
     --Principal--Azul--Claro: #008ec3;
-    --Principal--Azul: #00335e;
-    /* ========= Btn Institucional ========= */
-    --border-color-lime-green-button: #c3ff00;
-    --color-lime-green: #c3ff00;
-    /* ========= Textos ========= */
-    --text--color-whiter: #fff;
-
-    /*========== Espessura da fonte ==========*/
-    --font-300: 300;
-    --font-normal: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
-}
-
-/*========== Clearfix para Responsividade - 100px/200px ==========*/
-.boxes,
-.mailing,
-.cookiescript_injected {
-    overflow: hidden;
 }
 
 /*=============== BREAKPOINTS ===============*/
