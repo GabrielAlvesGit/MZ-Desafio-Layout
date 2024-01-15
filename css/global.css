@@ -1,0 +1,66 @@
+/* ========= Google Fonts Roboto ========= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,100;1,200;1,300&display=swap");
+
+/* Reset style */
+*,
+*:before,
+*:after {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    display: block;
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /* ========= background-color ========= */
+    --background--color--header: #00335e;
+    --principal-branco: #ffffff;
+
+    /* Color*/
+    --Principal--Azul--Claro: #008ec3;
+    --Principal--Azul: #00335e;
+    /* ========= Btn Institucional ========= */
+    --border-color-lime-green-button: #c3ff00;
+    --color-lime-green: #c3ff00;
+    /* ========= Textos ========= */
+    --text--color-whiter: #fff;
+
+    /*========== Espessura da fonte ==========*/
+    --font-300: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+/*========== Clearfix para Responsividade - 100px/200px ==========*/
+.boxes,
+.mailing,
+.cookiescript_injected {
+    overflow: hidden;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

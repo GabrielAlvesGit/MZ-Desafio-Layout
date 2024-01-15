@@ -1,0 +1,253 @@
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    height: 88px;
+    z-index: 999;
+    background-color: var(--background--color--header);
+    border-bottom: 1px solid white;
+}
+
+/* Container Header */
+.containerHeader {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 42px;
+    padding-left: 42px;
+}
+
+/* Logo Mz */
+.logo {
+    display: grid;
+    column-gap: 1.25rem;
+    grid-template-columns: 1fr;
+    align-content: space-around;
+    justify-items: center;
+}
+
+/* Logo MZ*/
+.container--logo--svg {
+    width: 72px;
+    height: 37px;
+    max-width: 100%;
+}
+
+/* ============= Menu ============= */
+.menu--nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.menu--ul {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-li {
+    padding: 28px 0;
+}
+
+/* Texto  - a Empresa, NOSSOS FUNDOS, CARTAS, CONTEÚDOS e CONTATO */
+.menu-li-titulo {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 5px 30px;
+    color: var(--text--color-whiter);
+    text-transform: uppercase;
+    cursor: default;
+    font-size: 0.8125rem;
+}
+
+.menu-li:hover > a {
+    color: var(--Principal--Azul--Claro);
+    font-weight: 700;
+}
+
+.submenu-ul {
+    display: none;
+    position: fixed;
+    top: 88px;
+    width: 177px;
+    height: 96px;
+    flex-shrink: 0;
+    background: #ffffff;
+    text-align: center;
+    line-height: 2;
+    border-radius: 0px 0px 9px 9px;
+    margin-top: -2px;
+    overflow: hidden;
+    border: 1px solid #8c8b8b;
+    margin-left: -15px;
+
+    box-shadow: 0px 0px 5px rgba(87, 83, 84, 0.5);
+}
+
+/* Texto do Submenu - Sobre a Empresa */
+.submenu-texto {
+    color: #231f20;
+    line-height: 100%;
+    padding: 10px 0 10px 0;
+    display: block;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.menu-li:hover .submenu-ul {
+    display: block;
+}
+/* Cor fundo ao passar o mouse */
+.submenu-ul li:hover {
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+/* ========== Btns Header ========== */
+.btns--heard {
+    display: flex;
+    align-items: center;
+}
+/* Btns - Como Investir */
+.btns-heard-comoInv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
+    width: 100%;
+    padding: 7px 15px;
+    background-color: #ffffff;
+    border: 1px solid #1a1a13;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btns-heard-comoInv .btns-heard-comoInv-texto {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--Principal--Azul);
+}
+/* Hover - Btn Como Investir - Btn */
+.btns-heard-comoInv:hover {
+    border: 1px solid #111112;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+}
+/* Hover - Btn Como Investir - texto */
+.btns-heard-comoInv:hover .btns-heard-comoInv-texto {
+    color: var(--Principal--Azul--Claro);
+}
+
+/* =========== PORTAL DO INVESTIDOR =========== */
+.btns-heard-portaldoInv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
+    width: 100%;
+    padding: 7px 15px;
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btns-heard-portaldoInv > svg {
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+}
+/* Texto - */
+.btns-heard-portaldoInv-texto {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* ======= Linguagens Pt/En ======== */
+.container-linguagens {
+    display: flex;
+    align-items: center;
+}
+
+.container-linguagens .en,
+.containerLinguagens .pt {
+    font-size: 0.75rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+.container-linguagens .pt.active {
+    display: none;
+}
+
+/* ======= Menu Hamburger ======== */
+.menu-hamburger svg {
+    display: none;
+    fill: #ffffff;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1200px) {
+    .menu--nav {
+        display: none;
+    }
+    .containerHeader {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 992px) {
+    .menu--nav,
+    .btns-heard-comoInv {
+        display: none;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    header {
+        overflow: hidden;
+    }
+
+    .btns-heard-portaldoInv {
+        white-space: normal;
+    }
+
+    .btns-heard-portaldoInv > svg {
+        margin-right: 0;
+        height: 25px;
+        width: 25px;
+    }
+
+    .container--logo--svg {
+        position: relative;
+        display: block;
+        padding: 0 0 15px 0;
+        text-align: center;
+        max-width: 115px;
+    }
+
+    .btns-heard-portaldoInv-texto {
+        display: none;
+    }
+
+    .container-linguagens .en,
+    .containerLinguagens .pt {
+        font-size: 1rem;
+    }
+
+    .btns--heard {
+        position: absolute;
+        top: 26px;
+        left: 50%;
+        z-index: 1;
+    }
+}
