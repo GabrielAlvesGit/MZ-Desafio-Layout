@@ -1,0 +1,154 @@
+/* ============  Section Ilha Png ============*/
+.background-imageIlha-section {
+    background-color: #282b2e;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Container para centralizar a imagem Gif Ilha */
+.containerImageGif {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* Centralizar a imagem Gif Ilha horizontalmente */
+.containerImageGif img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* Gradient por cima da imagem Gif Ilha */
+.containerImageGif::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 40%,
+        rgba(255, 255, 255, 6) 100%
+    );
+    z-index: 1;
+    opacity: 10;
+}
+
+/* Container para os textos - Informações */
+.text-info-container {
+    display: grid;
+    width: 80%;
+    height: 290px;
+    z-index: 1;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 42px;
+    padding-left: 42px;
+}
+
+/* Texto - +10 anos , +30 Mil  e +4 Bilhões  */
+.years-info,
+.investors-info,
+.assets-info {
+    display: flex;
+    align-items: center;
+    height: auto;
+    font-size: 3rem;
+    font-weight: 700;
+
+    gap: 48px;
+}
+
+/* Cor para todos os textos */
+.years-info,
+.investors-info,
+.assets-info,
+.years-info span,
+.investors-info span,
+.assets-info span {
+    color: var(--color-azul--escuro);
+}
+
+/* Subtexto Span - gerindo fundos de investimentos, Investidores que aplicam em nossos produtos e ativos sob gestão */
+.years-info span,
+.investors-info span,
+.assets-info span {
+    display: flex;
+    width: 225px;
+    height: auto;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.years-info span {
+    width: 190px;
+}
+.investors-info span {
+    width: 276px;
+}
+/* Posicionamento específico para cada years-info  */
+.investors-info {
+    justify-content: center;
+}
+.assets-info {
+    justify-content: end;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    /* Títulos - +10 Anos.. */
+    .years-info,
+    .investors-info,
+    .assets-info {
+        font-size: 2rem;
+        gap: 25px;
+    }
+
+    .years-info span,
+    .investors-info span,
+    .assets-info span {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .text-info-container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .text-info-container {
+        overflow: hidden;
+    }
+    /*  Títulos - +10 Anos.. */
+    .years-info,
+    .investors-info,
+    .assets-info {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .years-info span,
+    .investors-info span,
+    .assets-info span {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.75rem;
+        line-height: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+/* ============  Section Imagem Gif ============*/
+.background-image-section {
+    background-color: #282b2e;
+    width: 100%;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImage {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* Centralizar a imagem  */
+.containerImage img {
+    width: 100%;
+    height: 610px;
+    display: block;
+}
+
+/* Container para os textos sobrepostos à imagem */
+.container-background-image-texts {
+    width: 100%;
+    text-align: left;
+    z-index: 1;
+}
+
+/* Titulo - Nós somos a Companhia,
+uma gestora de fundos de
+investimento comprometida
+com o seu futuro. */
+.text-h1-background-image {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #f8fafc;
+    margin: 0;
+}
+
+.text-span-background-image {
+    display: block;
+    margin-top: 10px;
+}
+
+.text-h1-background-image span {
+    font-weight: 500;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .text-h1-background-image {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Ajustando o tamanho do texto para telas menores */
+    .text-h1-background-image {
+        font-size: 1.7rem;
+        overflow: hidden;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .background-image-section {
+        overflow: hidden;
+    }
+}

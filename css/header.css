@@ -1,3 +1,4 @@
+/* ============  Header ============*/
 /* Header */
 header {
     display: flex;
@@ -5,10 +6,10 @@ header {
     height: 88px;
     z-index: 999;
     background-color: var(--background--color--header);
-    border-bottom: 1px solid white;
+    box-shadow: 0px 0px 5px rgb(0, 51, 94, 0.5);
 }
 
-/* Container Header */
+/* Container do Header */
 .containerHeader {
     display: flex;
     width: 100%;
@@ -19,20 +20,20 @@ header {
     padding-left: 42px;
 }
 
-/* Logo Mz */
+/* Container do Logo MZ */
+.container--logo--svg {
+    width: 72px;
+    height: 37px;
+    max-width: 100%;
+}
+
+/* Logo MZ */
 .logo {
     display: grid;
     column-gap: 1.25rem;
     grid-template-columns: 1fr;
     align-content: space-around;
     justify-items: center;
-}
-
-/* Logo MZ*/
-.container--logo--svg {
-    width: 72px;
-    height: 37px;
-    max-width: 100%;
 }
 
 /* ============= Menu ============= */
@@ -54,7 +55,7 @@ header {
     padding: 28px 0;
 }
 
-/* Texto  - a Empresa, NOSSOS FUNDOS, CARTAS, CONTEÚDOS e CONTATO */
+/* Texto - a Empresa, NOSSOS FUNDOS, CARTAS, CONTEÚDOS e CONTATO */
 .menu-li-titulo {
     display: inline-block;
     position: relative;
@@ -83,17 +84,15 @@ header {
     text-align: center;
     line-height: 2;
     border-radius: 0px 0px 9px 9px;
-    margin-top: -2px;
     overflow: hidden;
     border: 1px solid #8c8b8b;
     margin-left: -15px;
-
     box-shadow: 0px 0px 5px rgba(87, 83, 84, 0.5);
 }
 
 /* Texto do Submenu - Sobre a Empresa */
 .submenu-texto {
-    color: #231f20;
+    color: #0d2833;
     line-height: 100%;
     padding: 10px 0 10px 0;
     display: block;
@@ -103,19 +102,21 @@ header {
 
 .menu-li:hover .submenu-ul {
     display: block;
+    z-index: 1;
 }
-/* Cor fundo ao passar o mouse */
+/* Cor fundo ao passar o mouse - SubMenu */
 .submenu-ul li:hover {
     background-color: #f2f2f2;
     width: 100%;
 }
 
-/* ========== Btns Header ========== */
+/* ========== Botões Header ========== */
 .btns--heard {
     display: flex;
     align-items: center;
+    gap: 3px;
 }
-/* Btns - Como Investir */
+/*  Botão - Como Investir */
 .btns-heard-comoInv {
     display: flex;
     align-items: center;
@@ -133,9 +134,9 @@ header {
 .btns-heard-comoInv .btns-heard-comoInv-texto {
     font-size: 0.75rem;
     text-align: center;
-    color: var(--Principal--Azul);
+    color: var(--color-azul--escuro);
 }
-/* Hover - Btn Como Investir - Btn */
+/* Hover - Btn Como Investir */
 .btns-heard-comoInv:hover {
     border: 1px solid #111112;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
@@ -145,7 +146,7 @@ header {
     color: var(--Principal--Azul--Claro);
 }
 
-/* =========== PORTAL DO INVESTIDOR =========== */
+/* =========== Portal do Investidor =========== */
 .btns-heard-portaldoInv {
     display: flex;
     align-items: center;
@@ -160,63 +161,159 @@ header {
     white-space: nowrap;
 }
 
+.btns-heard-portaldoInv:hover .btns-heard-portaldoInv-texto,
+.btns-heard-portaldoInv:hover svg path,
+.btns-heard-portaldoInv:hover,
+.btns-heard-portaldoInv:hover svg {
+    fill: none;
+    background-color: var(--principal-branco);
+    stroke: var(--color-azul--escuro);
+    color: var(--color-azul--escuro);
+}
+.btns-heard-portaldoInv:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+}
+
 .btns-heard-portaldoInv > svg {
     margin-right: 6px;
     width: 20px;
     height: 20px;
 }
-/* Texto - */
+/* Texto - Portal do Investidor */
 .btns-heard-portaldoInv-texto {
     font-size: 0.75rem;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--principal-branco);
 }
 
 /* ======= Linguagens Pt/En ======== */
 .container-linguagens {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .container-linguagens .en,
 .containerLinguagens .pt {
     font-size: 0.75rem;
-    color: #ffffff;
+    color: var(--principal-branco);
     font-weight: 500;
+    border-radius: 60%;
+    padding: 5px;
 }
+
 .container-linguagens .pt.active {
     display: none;
 }
+.container-linguagens a:hover {
+    color: var(--color-azul--escuro);
+    background-color: var(--principal-branco);
+}
 
 /* ======= Menu Hamburger ======== */
-.menu-hamburger svg {
+.menu-hamburger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     display: none;
-    fill: #ffffff;
+}
+
+/* Botão - Fechar Menu Hamburger (X) */
+.menu-hamburger .bx-hamburger,
+.menu-hamburger .bx-x {
+    fill: var(--principal-branco);
+}
+.menu-hamburger svg:hover path {
+    fill: var(--color-azul--claro);
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
-    .menu--nav {
+    .container-linguagens {
+        padding-right: 15px;
+    }
+    /* ======= Menu Hamburger ======== */
+    .menu--ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        top: 90px;
+        background-color: var(--background--color--header);
+        height: 0px;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    /* Active - js */
+    .menu--nav.active ul.menu--ul {
+        height: calc(100vh - 48px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .menu-li {
+        padding: 2px 0;
+    }
+
+    .menu-li-titulo {
+        font-weight: 700;
+    }
+
+    .submenu-ul {
+        display: block;
+        position: relative;
+        border-radius: 0;
+        line-height: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        height: 79px;
+        top: 2px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .submenu-texto {
+        color: var(--text--color-whiter);
+        padding: 5px 30px;
+    }
+    .submenu-ul li:hover .submenu-texto {
+        color: #0d2833;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .menu-hamburger .bx-x {
         display: none;
     }
-    .containerHeader {
-        justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+    .btns-heard-comoInv {
+        display: none;
+    }
+
+    .btns-heard-portaldoInv > svg {
+        height: 20px;
+        width: 20px;
     }
 }
-@media screen and (max-width: 992px) {
-    .menu--nav,
-    .btns-heard-comoInv {
+
+@media screen and (max-width: 576px) {
+    .btns-heard-portaldoInv-texto {
         display: none;
     }
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-    header {
-        overflow: hidden;
-    }
-
     .btns-heard-portaldoInv {
         white-space: normal;
     }
@@ -228,15 +325,10 @@ header {
     }
 
     .container--logo--svg {
-        position: relative;
         display: block;
+        position: relative;
         padding: 0 0 15px 0;
-        text-align: center;
-        max-width: 115px;
-    }
-
-    .btns-heard-portaldoInv-texto {
-        display: none;
+        max-width: 100%;
     }
 
     .container-linguagens .en,
@@ -249,5 +341,17 @@ header {
         top: 26px;
         left: 50%;
         z-index: 1;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 266px) {
+    header {
+        overflow: hidden;
+    }
+
+    .containerHeader {
+        padding-right: 0;
+        padding-left: 0;
     }
 }

@@ -5,17 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!--Importanção os icones site:https://boxicons.com/-->
    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-   <!-- Logo Page -->
+   <!-- Logo da Página -->
    <link rel="icon" type="Logo Business" href="./assets/img/favicon.ico" >
-  <!-- Global -->
+  <!-- Estilos Globais -->
   <link rel="stylesheet" href="./css/global.css">
-  <!-- header Css -->
+  <!-- Header -->
   <link rel="stylesheet" href="./css/header.css">
+   <!-- section imagem background  -->
+   <link rel="stylesheet" href="./css/sectionImgBackgroud.css">
+   <!-- Barra de Rolagem -->
+   <link rel="stylesheet" href="./css/scrollbarStyles.css">
+   <!-- Seção de Imagem Ilha PNG -->
+   <link rel="stylesheet" href="./css/sectionImgBackgroud-Ilha.css">
+    <!--Botão do WhatsApp -->
+   <link rel="stylesheet" href="./css/whatsapp.css">
   <title>MZ Group - RI | Relações com Investidores</title>
 </head>
 <body>
+  <!-- Cabeçalho (Header) -->
   <header>
     <section class="containerHeader">
+      <!-- Logo -->
       <div class="logo">
         <a href="" class="container--logo--svg">
           <svg viewBox="0 0 167.12 85" class="header__logo__svg"    fill="#FFFFFF"><g><g><path class="header__logo__svg__fill" d="M87,0V85H71.87V33.25L48.12,71.37H39L14.87,32.75,15.12,85H0V0H10.75L43.5,52.87,76.25,0Zm80.12,71.37V85H97.25V77.88l47.5-64.26H99V0h67.62V7.12L120.75,71.37Z"></path></g></g>
@@ -23,13 +33,13 @@
         </a>
       </div>
 
-      <!-- Nav Bar -->
+      <!-- Nav Barra de Navegação -->
       <nav class="menu--nav">
         <ul class="menu--ul">
-           
           <!--EMPRESA-->
           <li class="menu-li"> 
             <a href="" class="menu-li-titulo">EMPRESA</a>
+             <!-- SubMenu -->
             <ul class="submenu-ul">
               <li>
                 <a class="submenu-texto" href="" >Sobre a Empresa</a>
@@ -61,7 +71,7 @@
         </ul>
       </nav>
 
-      <!-- Btns -->
+       <!-- Botões -->
       <div class="btns--heard">
          <!-- COMO INVESTIR -->
         <button class="btns-heard-comoInv">
@@ -88,8 +98,8 @@
         </div>
 
         <!-- Menu Hamburger-->
-        <div class="menu-hamburger">
-          <svg
+        <div class="menu-hamburger" onclick="toggleMenu()">
+          <svg id="menu-icon" class="bx bx-hamburger" 
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -97,10 +107,66 @@
           >
             <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
           </svg>
+          
+          <svg class="bx bx-x" id="close-icon" aria-label="Fechar Menu"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+            <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+            </path>
+          </svg>
         </div>
       </div>
     </section>
   </header>
+  
+  <!-- section de Imagem de Fundo Castelo.gif -->
+  <section class="background-image-section">
+    
+    <div class="containerImage">
+      <img src="./assets/img/castelo.gif" alt="">
+    </div>
+
+    <div class="container-background-image-texts containerHeader">
+      <h1 class="text-h1-background-image">Nós somos a Companhia,
+          <span class="text-span-background-image">uma gestora de fundos de</span>
+          <span class="text-span-background-image">investimento comprometida</span>
+          <span class="text-span-background-image">com o seu futuro.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Botão do WhatsApp -->
+  <div class="whatsappContainer">
+    <a href="#" class="whatsapp-link" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/img/buttonWhatsApp.png" alt="Ícone do WhatsApp">
+    </a>
+  </div>
+
+  <!-- section imagem de Fundo Ilha.png -->
+  <section class="background-imageIlha-section">
+    
+    <div class="containerImageGif">
+      <img src="./assets/img/ImagemIlha.jpg" alt="">
+    </div>
+
+    <div class="text-info-container">
+      <p class="years-info">+10 anos
+        <span>gerindo fundos de investimentos</span>
+      </p>
+      
+      <p class="investors-info">
+        +30 Mil
+        <span>Investidores que aplicam em nossos produtos</span>
+      </p>
+
+      <p class="assets-info">
+        +4 Bilhões 
+        <span>de ativos sob gestão</span>
+      </p>
+    </div>
+    
+  </section>
+
+  <!-- Script -->
+  <script src="./js/header.js"></script>
   
 </body>
 </html>

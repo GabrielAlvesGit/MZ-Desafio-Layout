@@ -26,8 +26,11 @@ body {
     --background--color--header: #00335e;
     --principal-branco: #ffffff;
 
-    /* Color*/
+    /* =========  Color* ========= */
     --Principal--Azul--Claro: #008ec3;
+    --color-azul--claro: #008ec3;
+    --color-azul--escuro: #00335e;
+    --text--color-whiter: #fff;
 }
 
 /*=============== BREAKPOINTS ===============*/

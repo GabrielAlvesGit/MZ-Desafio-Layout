@@ -1,0 +1,38 @@
+/* ============  Div whatsapp ============*/
+.whatsappContainer {
+    display: block;
+    cursor: pointer;
+}
+
+/* Link para o WhatsApp */
+.whatsapp-link {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 24pz;
+    transform: translate(-50%, -125%);
+}
+
+/* Imagem do ícone do WhatsApp */
+.whatsapp-link img {
+    max-width: 100%;
+    height: 60px;
+    width: 61px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 576px) {
+    .whatsapp-link img {
+        height: 50px;
+        width: 51px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .whatsapp-link img {
+        height: 40px;
+        width: 41px;
+    }
+}
