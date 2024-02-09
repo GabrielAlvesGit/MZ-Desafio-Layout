@@ -19,6 +19,9 @@
    <link rel="stylesheet" href="./css/sectionImgBackgroud-Ilha.css">
     <!--Botão do WhatsApp -->
    <link rel="stylesheet" href="./css/whatsapp.css">
+   <!-- section Sobre Nossos Fundos  -->
+    <link rel="stylesheet" href="./css/sectionSobreNossosFundos.css">
+
   <title>MZ Group - RI | Relações com Investidores</title>
 </head>
 <body>
@@ -38,7 +41,7 @@
         <ul class="menu--ul">
           <!--EMPRESA-->
           <li class="menu-li"> 
-            <a href="" class="menu-li-titulo">EMPRESA</a>
+            <a href="" class="menu-li-titulo cursor-pointer">EMPRESA</a>
              <!-- SubMenu -->
             <ul class="submenu-ul">
               <li>
@@ -73,11 +76,13 @@
 
        <!-- Botões -->
       <div class="btns--heard">
-         <!-- COMO INVESTIR -->
-        <button class="btns-heard-comoInv">
-          <a class="btns-heard-comoInv-texto" href="#">COMO INVESTIR</a>
-        </button>
-
+        <!-- COMO INVESTIR -->
+        <div class="btns-heard-comoInv-container  hidden">
+          <button class="btns-heard-comoInv">
+            <a class="btns-heard-comoInv-texto" href="#">COMO INVESTIR</a>
+          </button>
+        </div>
+      
         <!-- PORTAL DO INVESTIDOR -->
         <button class="btns-heard-portaldoInv">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
@@ -165,6 +170,45 @@
     
   </section>
 
+  <!-- section Sobre nossos fundos -->
+  <section  class="sobre-nossos-fundos-section">
+    <div class="container-sobre">
+      <h2>Sobre nossos <span>Fundos</span></h2>
+
+      <div class="container-group-sobre">
+        <div class="container-image-sobre">
+          <img src="./assets/img/ImagemIlha.jpg" alt="Ilha">
+        </div>
+
+        <div class="container-group-sobre-backgroud">
+          <div class="container-group-sobre-text">
+            <span class="title-desafio">Desafio da prova N2</span>
+            <p>
+              O Desafio FIC FIM Mallorca é caracterizado por possuir múltiplas estratégias independentes distribuídas nos mercados de juros, câmbio e bolsa, reduzindo a relação da rentabilidade com os movimentos de maior ou menor otimismo dos mercados. O fundo é destinado a receber aplicações de pessoas físicas e jurídicas, buscando retornos significativamente superiores ao CDI. O conjunto de estratégias descorrelacionadas faz com que o fundo obtenha retornos consistentes ao longo do tempo com volatilidade reduzida, alcançando um dos mais elevados índices de sharpe da indústria.
+            </p>
+            <a href="">Saiba mais</a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="container-carousel">
+        <div class="carousel-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
+          </svg>
+        </div>
+          <div class="dots-container">
+            <div class="dot special-dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        <div class="carousel-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+  </section>
   <!-- Script -->
   <script src="./js/header.js"></script>
   

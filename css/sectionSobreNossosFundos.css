@@ -1,0 +1,203 @@
+/* ============  Section Ilha Png ============*/
+.sobre-nossos-fundos-section {
+    background-color: var(--color-azul--escuro);
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container Sobre */
+.container-sobre {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 42px;
+    padding-left: 42px;
+    justify-content: space-evenly;
+}
+
+.container-image-sobre {
+    width: 50%;
+    height: 443px;
+}
+
+.container-image-sobre > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 10% 10%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.container-group-sobre {
+    display: flex;
+}
+
+.container-group-sobre-backgroud {
+    display: flex;
+    width: 90%;
+    border-radius: 0px 12px 12px 0px;
+    background-color: var(--color-azul--claro);
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+}
+
+.container-group-sobre-text {
+    display: flex;
+    width: 490px;
+    height: 348px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-sobre > h2 {
+    color: #f8fafc;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.container-sobre h2 > span {
+    font-weight: 700;
+}
+
+.title-desafio {
+    color: #f8fafc;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.container-group-sobre-text > p {
+    color: #f8fafc;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.container-group-sobre-text > a {
+    color: #f8fafc;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* carousel-btn  */
+.container-carousel {
+    display: flex;
+    width: 100%;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    background: linear-gradient(#00335e, #00335e) padding-box,
+        linear-gradient(45deg, #00335e 0%, #008ec3 100%);
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dots-container {
+    display: flex;
+    gap: 8px;
+    padding: 20px;
+}
+
+.dot {
+    display: inline-flex;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(#00335e, #00335e) padding-box,
+        linear-gradient(45deg, #00335e 0%, #008ec3 100%);
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.special-dot {
+    background: #f8fafc;
+}
+
+.carousel-btn svg {
+    fill: #f8fafc;
+    width: 1rem;
+    height: 1rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .sobre-nossos-fundos-section {
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .container-group-sobre {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .container-image-sobre > img {
+        border-radius: 12px;
+    }
+    .container-image-sobre {
+        height: 221px;
+        width: 100%;
+    }
+
+    .container-group-sobre-backgroud {
+        width: 100%;
+        border-radius: 12px;
+        overflow: overlay;
+        overflow-x: hidden;
+    }
+
+    .text-content {
+        height: 100%;
+    }
+
+    .container-group-sobre-text > p {
+        font-size: 0.75rem;
+    }
+
+    .container-group-sobre-text > p,
+    .title-desafio {
+        margin-bottom: 2px;
+    }
+
+    .container-group-sobre-backgroud::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .container-group-sobre-backgroud::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+}

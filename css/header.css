@@ -55,6 +55,10 @@ header {
     padding: 28px 0;
 }
 
+.cursor-pointer {
+    cursor: default !important;
+}
+
 /* Texto - a Empresa, NOSSOS FUNDOS, CARTAS, CONTEÚDOS e CONTATO */
 .menu-li-titulo {
     display: inline-block;
@@ -64,7 +68,8 @@ header {
     padding: 5px 30px;
     color: var(--text--color-whiter);
     text-transform: uppercase;
-    cursor: default;
+    cursor: pointer;
+    white-space: nowrap;
     font-size: 0.8125rem;
 }
 
@@ -251,8 +256,10 @@ header {
     /* Active - js */
     .menu--nav.active ul.menu--ul {
         height: calc(100vh - 48px);
+        position: fixed;
         visibility: visible;
         overflow-y: auto;
+        visibility: visible;
     }
 
     .menu-li {
@@ -282,6 +289,7 @@ header {
         color: var(--text--color-whiter);
         padding: 5px 30px;
     }
+
     .submenu-ul li:hover .submenu-texto {
         color: #0d2833;
     }
@@ -293,13 +301,28 @@ header {
     .menu-hamburger .bx-x {
         display: none;
     }
-}
 
-@media screen and (max-width: 992px) {
-    .btns-heard-comoInv {
+    .btns-heard-comoInv-container.hidden {
         display: none;
     }
 
+    .btns-heard-comoInv-container {
+        position: fixed;
+        display: flex;
+        z-index: 1000;
+        left: 0;
+        top: 338px;
+        height: calc(6vh - 0px);
+        align-items: center;
+        padding: 5px 29px;
+    }
+
+    .btns-heard-comoInv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
     .btns-heard-portaldoInv > svg {
         height: 20px;
         width: 20px;
@@ -314,6 +337,10 @@ header {
 
 /* For small devices */
 @media screen and (max-width: 350px) {
+    header {
+        overflow: hidden;
+    }
+
     .btns-heard-portaldoInv {
         white-space: normal;
     }
@@ -338,20 +365,8 @@ header {
 
     .btns--heard {
         position: absolute;
-        top: 26px;
-        left: 50%;
-        z-index: 1;
-    }
-}
-
-/* For small devices */
-@media screen and (max-width: 266px) {
-    header {
-        overflow: hidden;
-    }
-
-    .containerHeader {
-        padding-right: 0;
-        padding-left: 0;
+        top: 27px;
+        right: 4px;
+        z-index: 1000;
     }
 }
