@@ -1,0 +1,291 @@
+/* ============  Section Novidades ============*/
+.novidades {
+    width: 100%;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container novidades */
+.container-novidades {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 42px;
+    padding-left: 42px;
+    justify-content: space-between;
+}
+
+/* ============ Notícias  ============*/
+.container-notícias {
+    height: 446px;
+    width: 47.5%;
+}
+
+/* h3 - 'Últimas Notícias' */
+.container-notícias > h3 {
+    display: flex;
+    flex-direction: column;
+    color: #282b2e;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/* Linha decorativa antes do link dentro do container de notícias */
+.container-notícias h3 > span {
+    color: var(--color-azul--escuro);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.container-notícias > a {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    color: #282b2e;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 22px;
+    align-items: flex-end;
+}
+
+.container-notícias > a::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 91px;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: var(--color-azul--escuro);
+}
+
+/* Grupo de notícias dentro do container de notícias */
+.group-notícias {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+/* Estilo para cada notícia no grupo de notícias */
+.notícia {
+    display: flex;
+    width: 47.5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Imagem dentro de uma notícia */
+.notícia > img {
+    object-fit: cover;
+    width: 100%;
+    height: 114px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+/* Título de uma notícia */
+.title-notícia {
+    color: var(--color-azul--escuro);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* Texto de uma notícia */
+.text-notícia {
+    color: #282b2e;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Link 'Leia mais' e ícone '+' dentro de uma notícia */
+.notícia > a {
+    display: flex;
+    width: 100%;
+    color: var(--color-azul--escuro);
+    font-weight: 700;
+    font-size: 0.95rem;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+/* Linha decorativa após o link dentro de uma notícia */
+.notícia > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-azul--escuro);
+}
+
+/* Data de uma notícia */
+.date-noticia {
+    color: #848588;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 22px;
+}
+
+/* ============  Eventos ============*/
+.container-eventos {
+    height: 439px;
+    width: 47.5%;
+}
+
+/* Título 'Eventos' */
+.container-eventos > h3 {
+    display: flex;
+    flex-direction: column;
+    color: #282b2e;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+}
+
+.container-eventos h3 > span {
+    color: var(--color-azul--escuro);
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+}
+
+/* Container de eventos */
+.container-eventos > a {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    color: #282b2e;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 22px;
+    align-items: flex-end;
+}
+
+/* Linha decorativa antes do link dentro do container de eventos */
+.container-eventos > a::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 91px;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: var(--color-azul--escuro);
+}
+
+/* Data de um evento */
+.date-evento {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #00335e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f8fafc;
+    font-weight: 600;
+    font-size: 1.13rem;
+}
+
+.date-evento > span {
+    font-weight: 500;
+    font-size: 0.5rem;
+    opacity: 0.7;
+}
+
+/* Grupo de eventos dentro do container de eventos */
+.group-eventos {
+    display: flex;
+    width: 100%;
+    height: 70.2%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Cada evento no grupo de eventos */
+.evento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Detalhes de um evento */
+.evento-details {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Grupo de textos dentro de um evento */
+.group-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Título de um evento */
+.title-evento {
+    color: #282b2e;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.title-evento,
+.horario-evento {
+    display: flex;
+    gap: 5px;
+}
+
+.group-email {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .novidades {
+        height: auto;
+        overflow: hidden;
+    }
+    .container-novidades {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 11px 11px;
+    }
+
+    .container-notícias {
+        height: 50%;
+        width: 100%;
+    }
+
+    .container-eventos {
+        height: 439px;
+        width: 100%;
+    }
+}
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .text-notícia {
+        font-size: 0.8rem;
+    }
+
+    .notícia > a {
+        font-size: 0.8rem;
+    }
+
+    .title-evento,
+    .horario-evento {
+        font-size: 0.9rem;
+    }
+}

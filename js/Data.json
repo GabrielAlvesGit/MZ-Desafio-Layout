@@ -1,0 +1,23 @@
+{
+  "carousel": [
+    { 
+      "title": "Desafio da prova N2",
+      "img": "./assets/img/ImagemIlha.jpg", 
+      "descricao": "O Desafio FIC FIM Mallorca é caracterizado por possuir múltiplas estratégias independentes distribuídas nos mercados de juros, câmbio e bolsa, reduzindo a relação da rentabilidade com os movimentos de maior ou menor otimismo dos mercados. O fundo é destinado a receber aplicações de pessoas físicas e jurídicas, buscando retornos significativamente superiores ao CDI. O conjunto de estratégias descorrelacionadas faz com que o fundo obtenha retornos consistentes ao longo do tempo com volatilidade reduzida, alcançando um dos mais elevados índices de sharpe da indústria.",
+      "alt": "ilha" 
+    },
+    { 
+      "title": "Lorem title 2",
+      "img": "https://www.mzgroup.com.br/wp-content/uploads/sites/155/2021/01/Group-1-min.png", 
+      "descricao": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem corporis harum consequatur vero aliquam aspernatur dolorem excepturi id sit. Voluptate est dolore necessitatibus ab voluptatum dolores rem nulla repellendus quibusdam. 2", 
+      "alt": "tablet" 
+    },
+    { 
+      "title": "Lorem title 3",
+      "img": "https://lh3.googleusercontent.com/p/AF1QipNh-kqapl_PHBIyc6RpZN1cnUULfFzjw2gA1LSx=s680-w680-h510", 
+      "descricao": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem corporis harum consequatur vero aliquam aspernatur dolorem excepturi id sit. Voluptate est dolore necessitatibus ab voluptatum dolores rem nulla repellendus quibusdam. 3", 
+      "alt": "pessoas" 
+    }
+   
+  ]
+}

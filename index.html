@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/global.css">
   <!-- Header -->
   <link rel="stylesheet" href="./css/header.css">
-   <!-- section imagem background  -->
+   <!-- section Imagem background  -->
    <link rel="stylesheet" href="./css/sectionImgBackgroud.css">
    <!-- Barra de Rolagem -->
    <link rel="stylesheet" href="./css/scrollbarStyles.css">
@@ -21,7 +21,10 @@
    <link rel="stylesheet" href="./css/whatsapp.css">
    <!-- section Sobre Nossos Fundos  -->
     <link rel="stylesheet" href="./css/sectionSobreNossosFundos.css">
-
+   <!-- section Novidades  -->
+   <link rel="stylesheet" href="./css/sectionNovidades.css">
+  <!-- Footer  -->
+   <link rel="stylesheet" href="./css/footer.css">
   <title>MZ Group - RI | Relações com Investidores</title>
 </head>
 <body>
@@ -175,22 +178,20 @@
     <div class="container-sobre">
       <h2>Sobre nossos <span>Fundos</span></h2>
 
-      <div class="container-group-sobre">
+      <div class="container-group-sobre" id="carousel">
         <div class="container-image-sobre">
-          <img src="./assets/img/ImagemIlha.jpg" alt="Ilha">
+          <img id="imgCarousel" src="" alt="">
         </div>
 
         <div class="container-group-sobre-backgroud">
           <div class="container-group-sobre-text">
-            <span class="title-desafio">Desafio da prova N2</span>
-            <p>
-              O Desafio FIC FIM Mallorca é caracterizado por possuir múltiplas estratégias independentes distribuídas nos mercados de juros, câmbio e bolsa, reduzindo a relação da rentabilidade com os movimentos de maior ou menor otimismo dos mercados. O fundo é destinado a receber aplicações de pessoas físicas e jurídicas, buscando retornos significativamente superiores ao CDI. O conjunto de estratégias descorrelacionadas faz com que o fundo obtenha retornos consistentes ao longo do tempo com volatilidade reduzida, alcançando um dos mais elevados índices de sharpe da indústria.
-            </p>
+            <span class="title-desafio" id="titleCarousel"></span>
+            <p id="textCarousel"></p>
             <a href="">Saiba mais</a> 
           </div>
         </div>
       </div>
-
+    
       <div class="container-carousel">
         <div class="carousel-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
@@ -206,11 +207,329 @@
           </svg>
         </div>
       </div>
-      
+
     </div>
   </section>
+  
+  <!-- section novidades Últimas Notícias - Calendário de Eventos -->
+  <section class="novidades">
+    <div class="container-novidades">
+      <!-- Últimas Notícias -->
+      <div class="container-notícias">
+          <h3>Últimas<span>Notícias</span></h3>
+
+          <a href="#">Ver todos</a>
+
+          <div class="group-notícias">
+            <div class="notícia">
+              <img src="./assets/img/predios.jpg" alt="predios">
+              <span class="title-notícia">
+                Lorem ipsum dolor sit amet tempor
+                consectetur adipisicing elit
+              </span>
+  
+              <p class="text-notícia">
+                Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ipsum dolor sit amet,  sed do eiusmod tempor
+              </p>
+    
+              <a href="#">Leia mais
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7" cy="7" r="6.5" stroke="#00335E"/>
+                  <path d="M7.3595 6.56618H9.82645V7.44634H7.3595V10.0001H6.46694V7.44634H4V6.56618H6.46694V4.00006H7.3595V6.56618Z" fill="#00335E"/>
+                </svg>  
+              </a>
+
+              <div class="date-noticia">
+                <time datetime="2021-12-12" pubdate>12.12.2021</time>
+              </div>  
+            </div>
+            
+            <div class="notícia">
+              <img src="./assets/img/predios.jpg" alt="predios">
+              <span class="title-notícia">
+                Lorem ipsum dolor sit amet tempor
+                consectetur adipisicing elit
+              </span>
+  
+              <p class="text-notícia">
+                Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqu ipsum dolor sit amet,  sed do eiusmod tempor
+              </p>
+    
+              <a href="#">Leia mais
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7" cy="7" r="6.5" stroke="#00335E"/>
+                  <path d="M7.3595 6.56618H9.82645V7.44634H7.3595V10.0001H6.46694V7.44634H4V6.56618H6.46694V4.00006H7.3595V6.56618Z" fill="#00335E"/>
+                </svg>  
+              </a>
+
+              <div class="date-noticia">
+                <time datetime="2021-12-12" pubdate>12.12.2021</time>
+              </div>  
+            </div>
+          </div>
+      </div>
+
+      <!-- Calendário de Eventos -->
+      <div class="container-eventos">
+          <h3>Calendário de<span>Eventos</span></h3>
+
+          <a href="#">Ver todos</a>
+        
+          <div class="group-eventos">
+            <div class="evento">
+              <div class="evento-details">
+                <span class="date-evento">16<span>DEZ</span></span>
+  
+                <div class="group-texts">
+                  <span class="title-evento">Investor Day</span>
+                
+                  <span class="horario-evento">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.024 13.892C14.277 13.892 14.504 13.764 14.631 13.55C14.6815 13.4691 14.7151 13.3788 14.7299 13.2846C14.7446 13.1904 14.7402 13.0942 14.7169 13.0018C14.6935 12.9093 14.6517 12.8225 14.594 12.7466C14.5363 12.6707 14.4638 12.6072 14.381 12.56L10.511 10.26V5.72C10.511 5.62536 10.4923 5.53166 10.4561 5.44424C10.4199 5.35682 10.3667 5.2774 10.2998 5.21053C10.2328 5.14366 10.1533 5.09064 10.0658 5.05452C9.97837 5.01839 9.88464 4.99987 9.79 5H9.73C9.53904 5 9.35591 5.07586 9.22088 5.21088C9.08586 5.34591 9.01 5.52904 9.01 5.72V10.44C9.01 10.795 9.198 11.124 9.5 11.3L13.65 13.79C13.7633 13.8568 13.8925 13.892 14.024 13.892ZM18.01 10C18.01 14.411 14.421 18 10.01 18C5.599 18 2.01 14.411 2.01 10C2.01 5.589 5.599 2 10.01 2C14.421 2 18.01 5.589 18.01 10ZM20 10C20 4.486 15.514 0 10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10Z" fill="#008EC3"/>
+                    </svg>
+                    Horário: Horário Indefinido
+                  </span>
+                </div>
+              </div>
+              
+              <div class="group-email">
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.2583 3.80399L29.1516 24H3.84864L2.15137 4.19484L16.5001 11.8646L31.2583 3.80399Z" fill="#F2F2F2"/>
+                    <path d="M30.5435 0L16.4998 12.594L2.45605 0H16.4998H30.5435Z" fill="#F2F2F2"/>
+                    <path d="M3.84851 5.81575V24H1.55635C1.14507 24.0012 0.75014 23.8454 0.458319 23.5668C0.166497 23.2883 0.00165287 22.9099 0 22.5146L0 3.13718L2.51335 3.20232L3.84851 5.81575Z" fill="#F14336"/>
+                    <path d="M32.9999 3.13711V22.5145C32.9982 22.9098 32.8334 23.2882 32.5416 23.5668C32.2497 23.8453 31.8548 24.0011 31.4435 24H29.1514V5.81568L30.4205 2.95282L32.9999 3.13711Z" fill="#D32E2A"/>
+                    <path d="M33 1.48543V3.13715L29.1515 5.81572L16.5 14.6186L3.84851 5.81572L0 3.13715V1.48543C0.00165286 1.09033 0.166374 0.711999 0.458003 0.4335C0.749632 0.155002 1.14433 -0.000905288 1.55546 6.20107e-06H2.45627L16.5 9.77143L30.5437 6.20107e-06H31.4436C31.8549 -0.00113279 32.2499 0.154674 32.5417 0.433197C32.8335 0.71172 32.9983 1.09018 33 1.48543Z" fill="#F14336"/>
+                    <path d="M3.84851 5.81575L0 5.24575V3.13718L3.84851 5.81575Z" fill="#D32E2A"/>
+                  </svg>  
+                </a>
+    
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.9065 7.00018H18.5935C17.99 7.00018 17.5 7.52322 17.5 8.16728C17.5 8.81134 17.99 9.33339 18.5935 9.33339H30.7186L23.9986 14.9099L19.18 11.6396L18.007 13.6098L23.4765 17.3201C23.6661 17.4499 23.8895 17.5136 24.1151 17.5023C24.3408 17.491 24.5574 17.4053 24.7346 17.2571L32.813 10.5525V25.6689H18.5935C17.99 25.6689 17.5 26.1919 17.5 26.836C17.5 27.4801 17.99 28.0011 18.5935 28.0011H33.9065C34.51 28.0011 35 27.4791 35 26.835V8.16728C35 7.52322 34.51 6.99918 33.9065 6.99918V7.00018Z" fill="#194392"/>
+                  <path d="M19.2916 0.268499C19.1691 0.158466 19.0246 0.0791038 18.869 0.0363318C18.7134 -0.00644032 18.5507 -0.0115183 18.393 0.0214765L0.89298 3.5218C0.641194 3.57225 0.414049 3.71428 0.250944 3.92325C0.0878387 4.13223 -0.000939426 4.39497 7.49737e-06 4.6659V30.3343C7.49737e-06 30.8943 0.373656 31.3764 0.89298 31.4794L18.393 34.9797C18.5507 35.0115 18.7132 35.0059 18.8686 34.9632C19.024 34.9204 19.1685 34.8417 19.2916 34.7327C19.5432 34.5107 19.688 34.1796 19.688 33.8336V1.16658C19.688 0.81955 19.5432 0.49052 19.2907 0.268499H19.2916Z" fill="#2196F3"/>
+                  <path d="M13.125 18.6672C13.125 21.2415 11.6531 23.3347 9.84351 23.3347C8.03486 23.3347 6.56297 21.2415 6.56297 18.6672C6.56297 16.094 8.03486 14.0008 9.84351 14.0008C11.6531 14.0008 13.125 16.094 13.125 18.6672ZM15.312 18.6672C15.312 14.8079 12.8582 11.6666 9.84446 11.6666C6.82973 11.6666 4.375 14.8079 4.375 18.6672C4.375 22.5276 6.82973 25.6679 9.84351 25.6679C12.8582 25.6679 15.312 22.5276 15.312 18.6672Z" fill="#FAFAFA"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="evento">
+              <div class="evento-details">
+                <span class="date-evento">16<span>DEZ</span></span>
+  
+                <div class="group-texts">
+                  <span class="title-evento">Investor Day</span>
+                
+                  <span class="horario-evento">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.024 13.892C14.277 13.892 14.504 13.764 14.631 13.55C14.6815 13.4691 14.7151 13.3788 14.7299 13.2846C14.7446 13.1904 14.7402 13.0942 14.7169 13.0018C14.6935 12.9093 14.6517 12.8225 14.594 12.7466C14.5363 12.6707 14.4638 12.6072 14.381 12.56L10.511 10.26V5.72C10.511 5.62536 10.4923 5.53166 10.4561 5.44424C10.4199 5.35682 10.3667 5.2774 10.2998 5.21053C10.2328 5.14366 10.1533 5.09064 10.0658 5.05452C9.97837 5.01839 9.88464 4.99987 9.79 5H9.73C9.53904 5 9.35591 5.07586 9.22088 5.21088C9.08586 5.34591 9.01 5.52904 9.01 5.72V10.44C9.01 10.795 9.198 11.124 9.5 11.3L13.65 13.79C13.7633 13.8568 13.8925 13.892 14.024 13.892ZM18.01 10C18.01 14.411 14.421 18 10.01 18C5.599 18 2.01 14.411 2.01 10C2.01 5.589 5.599 2 10.01 2C14.421 2 18.01 5.589 18.01 10ZM20 10C20 4.486 15.514 0 10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10Z" fill="#008EC3"/>
+                    </svg>
+                    Horário: Horário Indefinido
+                  </span>
+                </div>
+              </div>
+              
+              <div class="group-email">
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.2583 3.80399L29.1516 24H3.84864L2.15137 4.19484L16.5001 11.8646L31.2583 3.80399Z" fill="#F2F2F2"/>
+                    <path d="M30.5435 0L16.4998 12.594L2.45605 0H16.4998H30.5435Z" fill="#F2F2F2"/>
+                    <path d="M3.84851 5.81575V24H1.55635C1.14507 24.0012 0.75014 23.8454 0.458319 23.5668C0.166497 23.2883 0.00165287 22.9099 0 22.5146L0 3.13718L2.51335 3.20232L3.84851 5.81575Z" fill="#F14336"/>
+                    <path d="M32.9999 3.13711V22.5145C32.9982 22.9098 32.8334 23.2882 32.5416 23.5668C32.2497 23.8453 31.8548 24.0011 31.4435 24H29.1514V5.81568L30.4205 2.95282L32.9999 3.13711Z" fill="#D32E2A"/>
+                    <path d="M33 1.48543V3.13715L29.1515 5.81572L16.5 14.6186L3.84851 5.81572L0 3.13715V1.48543C0.00165286 1.09033 0.166374 0.711999 0.458003 0.4335C0.749632 0.155002 1.14433 -0.000905288 1.55546 6.20107e-06H2.45627L16.5 9.77143L30.5437 6.20107e-06H31.4436C31.8549 -0.00113279 32.2499 0.154674 32.5417 0.433197C32.8335 0.71172 32.9983 1.09018 33 1.48543Z" fill="#F14336"/>
+                    <path d="M3.84851 5.81575L0 5.24575V3.13718L3.84851 5.81575Z" fill="#D32E2A"/>
+                  </svg>  
+                </a>
+    
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.9065 7.00018H18.5935C17.99 7.00018 17.5 7.52322 17.5 8.16728C17.5 8.81134 17.99 9.33339 18.5935 9.33339H30.7186L23.9986 14.9099L19.18 11.6396L18.007 13.6098L23.4765 17.3201C23.6661 17.4499 23.8895 17.5136 24.1151 17.5023C24.3408 17.491 24.5574 17.4053 24.7346 17.2571L32.813 10.5525V25.6689H18.5935C17.99 25.6689 17.5 26.1919 17.5 26.836C17.5 27.4801 17.99 28.0011 18.5935 28.0011H33.9065C34.51 28.0011 35 27.4791 35 26.835V8.16728C35 7.52322 34.51 6.99918 33.9065 6.99918V7.00018Z" fill="#194392"/>
+                  <path d="M19.2916 0.268499C19.1691 0.158466 19.0246 0.0791038 18.869 0.0363318C18.7134 -0.00644032 18.5507 -0.0115183 18.393 0.0214765L0.89298 3.5218C0.641194 3.57225 0.414049 3.71428 0.250944 3.92325C0.0878387 4.13223 -0.000939426 4.39497 7.49737e-06 4.6659V30.3343C7.49737e-06 30.8943 0.373656 31.3764 0.89298 31.4794L18.393 34.9797C18.5507 35.0115 18.7132 35.0059 18.8686 34.9632C19.024 34.9204 19.1685 34.8417 19.2916 34.7327C19.5432 34.5107 19.688 34.1796 19.688 33.8336V1.16658C19.688 0.81955 19.5432 0.49052 19.2907 0.268499H19.2916Z" fill="#2196F3"/>
+                  <path d="M13.125 18.6672C13.125 21.2415 11.6531 23.3347 9.84351 23.3347C8.03486 23.3347 6.56297 21.2415 6.56297 18.6672C6.56297 16.094 8.03486 14.0008 9.84351 14.0008C11.6531 14.0008 13.125 16.094 13.125 18.6672ZM15.312 18.6672C15.312 14.8079 12.8582 11.6666 9.84446 11.6666C6.82973 11.6666 4.375 14.8079 4.375 18.6672C4.375 22.5276 6.82973 25.6679 9.84351 25.6679C12.8582 25.6679 15.312 22.5276 15.312 18.6672Z" fill="#FAFAFA"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="evento">
+              <div class="evento-details">
+                <span class="date-evento">16<span>DEZ</span></span>
+  
+                <div class="group-texts">
+                  <span class="title-evento">Investor Day</span>
+                
+                  <span class="horario-evento">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.024 13.892C14.277 13.892 14.504 13.764 14.631 13.55C14.6815 13.4691 14.7151 13.3788 14.7299 13.2846C14.7446 13.1904 14.7402 13.0942 14.7169 13.0018C14.6935 12.9093 14.6517 12.8225 14.594 12.7466C14.5363 12.6707 14.4638 12.6072 14.381 12.56L10.511 10.26V5.72C10.511 5.62536 10.4923 5.53166 10.4561 5.44424C10.4199 5.35682 10.3667 5.2774 10.2998 5.21053C10.2328 5.14366 10.1533 5.09064 10.0658 5.05452C9.97837 5.01839 9.88464 4.99987 9.79 5H9.73C9.53904 5 9.35591 5.07586 9.22088 5.21088C9.08586 5.34591 9.01 5.52904 9.01 5.72V10.44C9.01 10.795 9.198 11.124 9.5 11.3L13.65 13.79C13.7633 13.8568 13.8925 13.892 14.024 13.892ZM18.01 10C18.01 14.411 14.421 18 10.01 18C5.599 18 2.01 14.411 2.01 10C2.01 5.589 5.599 2 10.01 2C14.421 2 18.01 5.589 18.01 10ZM20 10C20 4.486 15.514 0 10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10Z" fill="#008EC3"/>
+                    </svg>
+                    Horário: Horário Indefinido
+                  </span>
+                </div>
+              </div>
+              
+              <div class="group-email">
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.2583 3.80399L29.1516 24H3.84864L2.15137 4.19484L16.5001 11.8646L31.2583 3.80399Z" fill="#F2F2F2"/>
+                    <path d="M30.5435 0L16.4998 12.594L2.45605 0H16.4998H30.5435Z" fill="#F2F2F2"/>
+                    <path d="M3.84851 5.81575V24H1.55635C1.14507 24.0012 0.75014 23.8454 0.458319 23.5668C0.166497 23.2883 0.00165287 22.9099 0 22.5146L0 3.13718L2.51335 3.20232L3.84851 5.81575Z" fill="#F14336"/>
+                    <path d="M32.9999 3.13711V22.5145C32.9982 22.9098 32.8334 23.2882 32.5416 23.5668C32.2497 23.8453 31.8548 24.0011 31.4435 24H29.1514V5.81568L30.4205 2.95282L32.9999 3.13711Z" fill="#D32E2A"/>
+                    <path d="M33 1.48543V3.13715L29.1515 5.81572L16.5 14.6186L3.84851 5.81572L0 3.13715V1.48543C0.00165286 1.09033 0.166374 0.711999 0.458003 0.4335C0.749632 0.155002 1.14433 -0.000905288 1.55546 6.20107e-06H2.45627L16.5 9.77143L30.5437 6.20107e-06H31.4436C31.8549 -0.00113279 32.2499 0.154674 32.5417 0.433197C32.8335 0.71172 32.9983 1.09018 33 1.48543Z" fill="#F14336"/>
+                    <path d="M3.84851 5.81575L0 5.24575V3.13718L3.84851 5.81575Z" fill="#D32E2A"/>
+                  </svg>  
+                </a>
+    
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.9065 7.00018H18.5935C17.99 7.00018 17.5 7.52322 17.5 8.16728C17.5 8.81134 17.99 9.33339 18.5935 9.33339H30.7186L23.9986 14.9099L19.18 11.6396L18.007 13.6098L23.4765 17.3201C23.6661 17.4499 23.8895 17.5136 24.1151 17.5023C24.3408 17.491 24.5574 17.4053 24.7346 17.2571L32.813 10.5525V25.6689H18.5935C17.99 25.6689 17.5 26.1919 17.5 26.836C17.5 27.4801 17.99 28.0011 18.5935 28.0011H33.9065C34.51 28.0011 35 27.4791 35 26.835V8.16728C35 7.52322 34.51 6.99918 33.9065 6.99918V7.00018Z" fill="#194392"/>
+                  <path d="M19.2916 0.268499C19.1691 0.158466 19.0246 0.0791038 18.869 0.0363318C18.7134 -0.00644032 18.5507 -0.0115183 18.393 0.0214765L0.89298 3.5218C0.641194 3.57225 0.414049 3.71428 0.250944 3.92325C0.0878387 4.13223 -0.000939426 4.39497 7.49737e-06 4.6659V30.3343C7.49737e-06 30.8943 0.373656 31.3764 0.89298 31.4794L18.393 34.9797C18.5507 35.0115 18.7132 35.0059 18.8686 34.9632C19.024 34.9204 19.1685 34.8417 19.2916 34.7327C19.5432 34.5107 19.688 34.1796 19.688 33.8336V1.16658C19.688 0.81955 19.5432 0.49052 19.2907 0.268499H19.2916Z" fill="#2196F3"/>
+                  <path d="M13.125 18.6672C13.125 21.2415 11.6531 23.3347 9.84351 23.3347C8.03486 23.3347 6.56297 21.2415 6.56297 18.6672C6.56297 16.094 8.03486 14.0008 9.84351 14.0008C11.6531 14.0008 13.125 16.094 13.125 18.6672ZM15.312 18.6672C15.312 14.8079 12.8582 11.6666 9.84446 11.6666C6.82973 11.6666 4.375 14.8079 4.375 18.6672C4.375 22.5276 6.82973 25.6679 9.84351 25.6679C12.8582 25.6679 15.312 22.5276 15.312 18.6672Z" fill="#FAFAFA"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="evento">
+              <div class="evento-details">
+                <span class="date-evento">16<span>DEZ</span></span>
+  
+                <div class="group-texts">
+                  <span class="title-evento">Investor Day</span>
+                
+                  <span class="horario-evento">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.024 13.892C14.277 13.892 14.504 13.764 14.631 13.55C14.6815 13.4691 14.7151 13.3788 14.7299 13.2846C14.7446 13.1904 14.7402 13.0942 14.7169 13.0018C14.6935 12.9093 14.6517 12.8225 14.594 12.7466C14.5363 12.6707 14.4638 12.6072 14.381 12.56L10.511 10.26V5.72C10.511 5.62536 10.4923 5.53166 10.4561 5.44424C10.4199 5.35682 10.3667 5.2774 10.2998 5.21053C10.2328 5.14366 10.1533 5.09064 10.0658 5.05452C9.97837 5.01839 9.88464 4.99987 9.79 5H9.73C9.53904 5 9.35591 5.07586 9.22088 5.21088C9.08586 5.34591 9.01 5.52904 9.01 5.72V10.44C9.01 10.795 9.198 11.124 9.5 11.3L13.65 13.79C13.7633 13.8568 13.8925 13.892 14.024 13.892ZM18.01 10C18.01 14.411 14.421 18 10.01 18C5.599 18 2.01 14.411 2.01 10C2.01 5.589 5.599 2 10.01 2C14.421 2 18.01 5.589 18.01 10ZM20 10C20 4.486 15.514 0 10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10Z" fill="#008EC3"/>
+                    </svg>
+                    Horário: Horário Indefinido
+                  </span>
+                </div>
+              </div>
+              
+              <div class="group-email">
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.2583 3.80399L29.1516 24H3.84864L2.15137 4.19484L16.5001 11.8646L31.2583 3.80399Z" fill="#F2F2F2"/>
+                    <path d="M30.5435 0L16.4998 12.594L2.45605 0H16.4998H30.5435Z" fill="#F2F2F2"/>
+                    <path d="M3.84851 5.81575V24H1.55635C1.14507 24.0012 0.75014 23.8454 0.458319 23.5668C0.166497 23.2883 0.00165287 22.9099 0 22.5146L0 3.13718L2.51335 3.20232L3.84851 5.81575Z" fill="#F14336"/>
+                    <path d="M32.9999 3.13711V22.5145C32.9982 22.9098 32.8334 23.2882 32.5416 23.5668C32.2497 23.8453 31.8548 24.0011 31.4435 24H29.1514V5.81568L30.4205 2.95282L32.9999 3.13711Z" fill="#D32E2A"/>
+                    <path d="M33 1.48543V3.13715L29.1515 5.81572L16.5 14.6186L3.84851 5.81572L0 3.13715V1.48543C0.00165286 1.09033 0.166374 0.711999 0.458003 0.4335C0.749632 0.155002 1.14433 -0.000905288 1.55546 6.20107e-06H2.45627L16.5 9.77143L30.5437 6.20107e-06H31.4436C31.8549 -0.00113279 32.2499 0.154674 32.5417 0.433197C32.8335 0.71172 32.9983 1.09018 33 1.48543Z" fill="#F14336"/>
+                    <path d="M3.84851 5.81575L0 5.24575V3.13718L3.84851 5.81575Z" fill="#D32E2A"/>
+                  </svg>  
+                </a>
+    
+                <a href="mailto:sales@mzgroup.com" class="contato__button">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.9065 7.00018H18.5935C17.99 7.00018 17.5 7.52322 17.5 8.16728C17.5 8.81134 17.99 9.33339 18.5935 9.33339H30.7186L23.9986 14.9099L19.18 11.6396L18.007 13.6098L23.4765 17.3201C23.6661 17.4499 23.8895 17.5136 24.1151 17.5023C24.3408 17.491 24.5574 17.4053 24.7346 17.2571L32.813 10.5525V25.6689H18.5935C17.99 25.6689 17.5 26.1919 17.5 26.836C17.5 27.4801 17.99 28.0011 18.5935 28.0011H33.9065C34.51 28.0011 35 27.4791 35 26.835V8.16728C35 7.52322 34.51 6.99918 33.9065 6.99918V7.00018Z" fill="#194392"/>
+                  <path d="M19.2916 0.268499C19.1691 0.158466 19.0246 0.0791038 18.869 0.0363318C18.7134 -0.00644032 18.5507 -0.0115183 18.393 0.0214765L0.89298 3.5218C0.641194 3.57225 0.414049 3.71428 0.250944 3.92325C0.0878387 4.13223 -0.000939426 4.39497 7.49737e-06 4.6659V30.3343C7.49737e-06 30.8943 0.373656 31.3764 0.89298 31.4794L18.393 34.9797C18.5507 35.0115 18.7132 35.0059 18.8686 34.9632C19.024 34.9204 19.1685 34.8417 19.2916 34.7327C19.5432 34.5107 19.688 34.1796 19.688 33.8336V1.16658C19.688 0.81955 19.5432 0.49052 19.2907 0.268499H19.2916Z" fill="#2196F3"/>
+                  <path d="M13.125 18.6672C13.125 21.2415 11.6531 23.3347 9.84351 23.3347C8.03486 23.3347 6.56297 21.2415 6.56297 18.6672C6.56297 16.094 8.03486 14.0008 9.84351 14.0008C11.6531 14.0008 13.125 16.094 13.125 18.6672ZM15.312 18.6672C15.312 14.8079 12.8582 11.6666 9.84446 11.6666C6.82973 11.6666 4.375 14.8079 4.375 18.6672C4.375 22.5276 6.82973 25.6679 9.84351 25.6679C12.8582 25.6679 15.312 22.5276 15.312 18.6672Z" fill="#FAFAFA"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+ <footer class="footer">
+  <div class="container-footer">
+      <div class="container-group">
+        <!-- Endereço -->
+        <div class="container-address">
+          <img src="./assets/img/passaro.png" alt="passaro">
+          <address>
+            <strong>SÃO PAULO</strong>
+            <p>Av. da MZ 2022020202</p>
+            <p>Porto da MZ/ SP</p>
+            <p>CEP 0000-000</p>
+            <p>Telefone: <a href="tel:+55110000000">+55 11 0000000</a></p>
+          </address>
+        </div>
+
+        <!-- Menu -->
+        <div class="group-menu">
+          <div class="menu-empresa">
+            <li class="common-title"><a href="#">A EMPRESA</a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Institucional</a></li>
+              <li class="footer-item"><a href="#">Equipe</a></li>
+              <li class="footer-item"><a href="#">Regulação</a></li>
+            </ul>
+          </div>
+    
+          <div class="menu-nossosFundos">
+            <li class="common-title"><a href="#">NOSSOS FUNDOS</a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+    
+          <div class="menu-cartas">
+            <li class="common-title"><a href="#">CARTAS</a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+    
+          <div class="menu-conteudos">
+            <li class="common-title"><a href="#">CONTEÚDOS</a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Mídia</a></li>
+              <li class="footer-item"><a href="#">Vídeos</a></li>
+            </ul>
+          </div>
+    
+          <div class="menu-contato">
+            <li class="common-title"><a href="#">CONTATO</a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+    
+          <div class="menu-comoInvestir">
+            <li class="common-title"><a href="#">COMO INVESTIR</a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Lorem</a></li>
+            </ul>
+          </div>
+    
+          <div class="menu-portalInvestidor">
+            <li class="common-title"><a href="#">PORTAL DO INVESTIDOR </a></li>
+            <ul class="list-footer">
+              <li class="footer-item"><a href="#">Lorem</a></li>
+            </ul>
+            <div class="container-btn">
+              <button><a href="#">Trabalhe Conosco</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Copy -->
+      <div class="container-copy">
+        <ul class="footer-social">
+          <li><a href="#"><img src="./assets/img/instagram.svg" alt="instagram"></a></li>
+          <li><a href="#"><img src="./assets/img/youtube.svg" alt="youtube"></a></li>
+          <li><a href="#"><img src="./assets/img/linkedin-in.svg" alt="linkedin"></a></li>
+          <li><a href="#"><img src="./assets/img/email.svg" alt="email"></a></li>
+        </ul>
+  
+        <span class="footer-copy">
+          <p>CNPJ: 00.000.000/0001-00   MZ CHALLENGE 2023</p>
+          <p>© 2023 Empresa | Todos os direitos reservados   | Powered by MZ</p>
+        </span>
+  
+        <div class="logo-footer">
+          <img src="./assets/img/comoInvestir.png" alt="como investir">
+          <img src="./assets/img/anbima.png" alt="anbima">
+          <img src="./assets/img/cvm.png" alt="cvm">
+        </div>
+      </div>
+  </div>
+ </footer>
   <!-- Script -->
   <script src="./js/header.js"></script>
-  
 </body>
 </html>

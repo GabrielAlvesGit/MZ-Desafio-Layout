@@ -1,0 +1,214 @@
+/* ============  Footer ============*/
+.footer {
+    background-color: var(--color-azul--escuro);
+    width: 100%;
+    height: 277px;
+    display: flex;
+    justify-content: center;
+}
+
+/*  Container Footer */
+.container-footer {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 42px;
+    padding-left: 42px;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*  Container Group - Endereço e Menu */
+.container-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* ============  Endereço ============*/
+address > p,
+address p > a {
+    color: var(--principal-branco);
+    font-weight: 400;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    font-style: normal;
+    line-height: 19px;
+    opacity: 0.8;
+}
+
+/*  SÃO PAULO  */
+strong {
+    color: var(--principal-branco);
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    font-style: normal;
+    line-height: 19px;
+}
+
+/* Menu */
+.group-menu {
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+}
+
+/* Common-title li */
+.common-title {
+    margin-bottom: 13px;
+}
+
+/* Common-title li a - A EMPRESA... */
+.common-title > a {
+    color: var(--principal-branco);
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 14.63px;
+    opacity: 0.9;
+}
+
+/* Sub footer-item  li - Institucional... */
+.footer-item > a {
+    color: var(--principal-branco);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 21.59px;
+    opacity: 0.7;
+}
+
+/* botão Trabalhe Conosco */
+.container-btn {
+    display: flex;
+    height: 62%;
+    align-items: flex-end;
+}
+
+.container-btn > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 100%;
+    padding: 7px 15px;
+    background-color: var(--principal-branco);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.container-btn button > a {
+    color: var(--color-azul--escuro);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 12px;
+}
+.container-btn button:hover a {
+    color: var(--Principal--Azul--Claro);
+}
+
+/* ============  Copy ============*/
+.container-copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer Copy - CNPJ: 00.000.000/0001-00   MZ CHALLENGE 2023... */
+.footer-copy > p {
+    text-align: center;
+    color: var(--principal-branco);
+    font-weight: 400;
+    font-size: 0.78rem;
+    opacity: 0.8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto;
+    }
+
+    .container-footer {
+        padding-top: 43px;
+        gap: 10px;
+    }
+
+    .container-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .group-menu {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .group-menu > div {
+        flex: 0 1 calc(30% - 10px);
+        margin-bottom: 10px;
+    }
+
+    .list-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-item {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .container-btn {
+        height: 39%;
+    }
+
+    .container-copy {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    .footer-copy {
+        grid-row: span 3;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .group-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-copy {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .footer {
+        overflow: hidden;
+    }
+}
